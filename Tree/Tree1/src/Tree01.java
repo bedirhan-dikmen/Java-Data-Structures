@@ -1,5 +1,5 @@
 
-public class Odev01 {
+public class Tree01 {
     public class Node{
         int sayi;
         Node next;
@@ -55,7 +55,7 @@ public class Odev01 {
 
     public static void main(String[] args){
 
-        Odev01 list = new Odev01();
+        Tree01 list = new Tree01();
 
         list.add(5);
         list.add(7);

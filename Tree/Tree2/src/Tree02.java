@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Odev02 {
+public class Tree02 {
     public static boolean Palindrom(String kelime) {
 
         Stack<Character> stack = new Stack<>();

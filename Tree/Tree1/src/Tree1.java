@@ -1,7 +1,6 @@
-/* Java ile tek yönlü bağlı listeyi çift yönlü bağlı listeye dönüştüren ve listeyi yazdıran bir programdır. 
-Şimdi adım adım inceleyelim */
+// Java ile tek yönlü bağlı listeyi çift yönlü bağlı listeye dönüştüren ve listeyi yazdıran bir programdır. 
 
-public class Odev1 {
+public class Tree1 {
     public class Node {
         int data; // Düğümün içinde bulunan veri.
         Node next; // Düğümde ileri gitmek için.
@@ -14,7 +13,7 @@ public class Odev1 {
     }
     public static void main(String[] args){
 
-        Odev1 bagliListe = new Odev1();
+        Tree1 bagliListe = new Tree1();
 
         bagliListe.ekle(11);
         bagliListe.ekle(22);
