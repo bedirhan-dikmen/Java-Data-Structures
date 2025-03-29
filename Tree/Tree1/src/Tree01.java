@@ -8,20 +8,20 @@ public class Tree01 {
     Node bas = null;
     Node son = null;
 
-    public void add(int n){
-        Node eleman = new Node();
+    public void add(int n){  
+        Node eleman = new Node();  // Yeni düğüm oluştur
         eleman.sayi = n;
 
-        if (bas == null){
+        if (bas == null){  // Liste boşsa
             bas = eleman;
             son = eleman;
         }
-        else{
-            son.next = eleman;
-            son = eleman;
+        else{  // Liste boş değilse
+            son.next = eleman;  // Mevcut son düğümün next'ini güncelle
+            son = eleman;  // Yeni düğümü son olarak ata
         }
     }
-    public void convert() {
+    public void convert() {  // Tek bağlı listeyi çift bağlı listeye çevirir ve ekrana yazdırır.
 
         Node deger1 = bas;
         Node deger2 = null;
@@ -40,7 +40,7 @@ public class Tree01 {
         System.out.println("son");
     }
 
-    public void printList(){
+    public void printList(){ // Tek bağlı listeyi ekrana yazdırır.
         Node temp = bas;
 
         System.out.println("Tek Bağlı Liste:");
@@ -62,9 +62,9 @@ public class Tree01 {
         list.add(11);
         list.add(13);
 
-        list.printList();
+        list.printList(); // Tek bağlı listeyi yazdır
 
-        list.convert();
+        list.convert(); // Çift bağlı listeyi yazdır
 
     }
 
